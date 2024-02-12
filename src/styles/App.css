@@ -20,14 +20,14 @@
   position: absolute;
   height: var(--app-height);
   width: 100%;
-  background-image: url("../src/assets/bg-light.jpg");
+  background-image: url("bg-light.jpg");
   background-size: cover;
   background-position: 35% center;
   filter: brightness(100%);
 }
 
 [data-theme="dark"] .App {
-  background-image: url("../src/assets/bg-dark.jpg");
+  background-image: url("bg-dark.jpg");
   background-size: cover;
   background-position: 35% center;
 }

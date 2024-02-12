@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     id: 1,
-    img: "../src/assets/project_1.jpg",
+    img: "project_1.jpg",
     title: "Coca Cola",
     tech: [
       {
@@ -23,7 +23,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    img: "../src/assets/project_2.jpg",
+    img: "project_2.jpg",
     title: "modern interior",
     tech: [
       {
