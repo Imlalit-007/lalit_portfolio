@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  --app-height: 100svh;
+  min-height: var(--app-height);
+  color: var(--body-color);
+  position: relative;
+}
+
+[data-theme="light"] .App::before {
+  content: "";
+  position: absolute;
+  height: var(--app-height);
+  width: 100%;
+  background-image: url("src/assets/bg-light.jpg");
+  background-size: cover;
+  background-position: 35% center;
+  filter: brightness(100%);
+}
+
+[data-theme="dark"] .App {
+  background-image: url("src/assets/bg-dark.jpg");
+  background-size: cover;
+  background-position: 35% center;
+}
+
+.App .hero-img {
+  width: 100%;
+  height: var(--app-height);
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+}
+
+.App .hero-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+[data-theme="light"] .hero-img img {
+  filter: brightness(100%) opacity(0.4);
+}
+
+.App .logo2-img {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 0;
+  filter: drop-shadow(0 0 10px var(--primary-color));
+}
+
+.App .logo2-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+[data-theme="dark"] .logo2-img img {
+  filter: invert(0);
+}
+
+[data-theme="light"] .logo2-img img {
+  filter: invert(1) hue-rotate(0.51turn);
+}
+
+.App .location {
+  position: fixed;
+  bottom: 20px;
+  left: 90px;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.App .location::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  height: 1px;
+  width: 100%;
+  background: var(--body-color);
+  transform: translateY(-50%);
+}
+
+.App .location > * {
+  color: var(--body-color);
+}
+
+.App .location > :first-child {
+  font-size: 15px;
+}
+
+.App .location span {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+[data-theme="dark"] .App::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+@media (min-width: 1024px) and (max-width: 1980px) {
+  [data-theme="light"] .App {
+    background-position: 100% center;
+  }
+
+  [data-theme="light"] .hero-img img {
+    filter: brightness(100%) opacity(0.7);
+  }
+
+  .App .hero-img img {
+    object-fit: contain;
+    object-position: 95% center;
+  }
+}

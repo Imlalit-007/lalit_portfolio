@@ -1,0 +1,22 @@
+:root {
+  --body-background: #000;
+  --body-color: #f9f9f9;
+  --primary-color: #176eff;
+  --secondary-color: darkgray;
+  scroll-behavior: smooth;
+}
+
+[data-theme="dark"] {
+  --body-background: #000;
+  --body-color: #f9f9f9;
+}
+
+[data-theme="light"] {
+  --body-background: #f9f9f9;
+  --body-color: #333;
+  --secondary-color: #ebebeb;
+}
+
+* {
+  -webkit-transition: all 100ms;
+}
