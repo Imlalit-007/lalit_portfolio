@@ -8,7 +8,6 @@ import Loader from "./components/Loader/Loader";
 
 const App = lazy(() => import("./App.jsx"));
 const Home = lazy(() => import("./pages/Home"));
-const About = lazy(() => import("./pages/About"));
 const Skills = lazy(() => import("./pages/Skills"));
 const Projects = lazy(() => import("./pages/Projects"));
 
@@ -22,14 +21,6 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loader />}>
             <Home />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/about",
-        element: (
-          <Suspense fallback={<Loader />}>
-            <About />
           </Suspense>
         ),
       },
