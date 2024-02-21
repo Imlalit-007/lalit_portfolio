@@ -43,4 +43,26 @@ export const projectsData = [
     webLink: "https://imlalit-007.github.io/interior-design/",
     sourceCode: "https://github.com/Imlalit-007/interior-design",
   },
+  {
+    id: 3,
+    img: "/static/images/project_3.jpg",
+    title: "Task Management App",
+    tech: [
+      {
+        id: 1,
+        techName: "React",
+      },
+      {
+        id: 2,
+        techName: "TailwindCSS",
+      },
+      {
+        id: 3,
+        techName: "ChakraUI",
+      },
+    ],
+    des: "qui veniam elit tempor labore duis aliqua exercitation excepteur commodo in reprehenderit non.",
+    webLink: "https://todo-app-three-sage-26.vercel.app/",
+    sourceCode: "https://github.com/Imlalit-007/todo-app",
+  },
 ];
