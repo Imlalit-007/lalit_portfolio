@@ -10,7 +10,7 @@ function ProjectCard({ project }) {
       <div className='card-info'>
         <p>{project.title}</p>
         <div className='tech'>
-          <p>Technologies: </p>
+          <p>Tech: </p>
           <div className='capsule'>
             {project.tech.map(el => (
               <span key={el.id}>{el.techName}</span>

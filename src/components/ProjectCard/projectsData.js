@@ -24,7 +24,7 @@ export const projectsData = [
   {
     id: 2,
     img: "/static/images/project_2.jpg",
-    title: "modern interior",
+    title: "Modern Interior",
     tech: [
       {
         id: 1,
@@ -46,7 +46,7 @@ export const projectsData = [
   {
     id: 3,
     img: "/static/images/project_3.jpg",
-    title: "Task Management App",
+    title: "Todo App",
     tech: [
       {
         id: 1,
