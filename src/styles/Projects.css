@@ -218,9 +218,16 @@
   }
 
   .project-container::-webkit-scrollbar {
-    background: var(--primary-color);
     border-radius: 5px;
-    height: 7px;
+    height: 5px;
+  }
+
+  .project-container::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.20);
+  }
+  
+  .project-container::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
   }
 
   .project-container .project-card {
