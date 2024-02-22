@@ -220,6 +220,7 @@
   .project-container::-webkit-scrollbar {
     border-radius: 5px;
     height: 5px;
+    margin-top: 7px;
   }
 
   .project-container::-webkit-scrollbar-track {
@@ -227,6 +228,7 @@
   }
   
   .project-container::-webkit-scrollbar-thumb {
+    border-radius: 5px;
     background: var(--primary-color);
   }
 
