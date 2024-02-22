@@ -44,7 +44,7 @@
 }
 
 .project-container::-webkit-scrollbar {
-  display: none;
+  background: none;
 }
 
 .project-container .project-card {
