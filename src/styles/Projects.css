@@ -217,6 +217,12 @@
     font-size: clamp(4.3vh, 8.3vh, 16.3vh);
   }
 
+  .project-container::-webkit-scrollbar {
+    background: var(--primary-color);
+    border-radius: 5px;
+    height: 7px;
+  }
+
   .project-container .project-card {
     max-width: 240px;
   }
