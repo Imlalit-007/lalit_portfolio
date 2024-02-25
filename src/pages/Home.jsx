@@ -22,13 +22,13 @@ function Home() {
           web applications for impact.
         </p>
         <div className='socials'>
-          <NavLink to='#'>
+          <NavLink to='https://x.com/im_lalit007?t=IgYnxGNYtSk4qLMgm4ZGLw&s=09'>
             <FaXTwitter />
           </NavLink>
-          <NavLink to='#'>
+          <NavLink to='https://www.instagram.com/imlalit_007?igsh=MTd0ZDk0cnY5NXFndQ=='>
             <IoLogoInstagram />
           </NavLink>
-          <NavLink to='#'>
+          <NavLink to='https://github.com/Imlalit-007'>
             <IoLogoGithub />
           </NavLink>
         </div>
